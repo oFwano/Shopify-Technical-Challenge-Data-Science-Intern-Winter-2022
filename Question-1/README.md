@@ -21,19 +21,29 @@ For example, if there are 100 orders each with an amount of $15 we would have an
 
 Secondly, the AOV in our calculation does not take into consideration of a possible price difference between stores. In the dataset provided, we can observe from the Fig 1. below that each store has a different unit price for its single shoe model. Since each store has a different unit price, the AOV from store to store may be different depending on price or traffic. 
 
-<br><br>
+<br>
 Fig 1. Unit price comparison
 ![alt text](https://github.com/oFwano/Shopify-Technical-Challenge-Data-Science-Intern-Winter-2022/blob/master/Question-1/Images/unit-price.png "Unit price comparison")
 <br><br>
 
+## **Think about a better way to evaluate this data.**
 With varying prices and varying traffic to each store, it become hard to make any meaningful conclusions using AOV alone. In order to evaluate the dataset better, we can measure each store individually to determine if a unit's price has an effect on units purchased or by remeasuring the AOV with the outliers taken out. 
 <br><br>
+2 Methods to evaluate the data better:
+  1. Remove the outliers
+  2. Alter the AOV formula:<br>
+    Naive:<br>
+      *AOV = total revenue / number of orders*<br>
+    Altered:<br>
+      *AOV = total revenue / number of items sold*
+
+
 
 ## **Question b) What metric would you report for this dataset?**
-I will reuse the AOV metric with the orders from User id:607 factored out. 
-<br><br>
+The metric I would report for this dataset is the Mode. The Mode, the most frequently occuring order value, is more robust to outliers resulting in less skewed values. In comparison, The Median which is the middle value of all orders maybe skewed towards one extreme if the extremely is significantly deviated from the norm.
 
 ## **Question c) What is its value?**
-Calculation of AOV without orders by User with id:607 = $754.09
+
+Mode of data['order amount'] = 153
 <br><br>
 
