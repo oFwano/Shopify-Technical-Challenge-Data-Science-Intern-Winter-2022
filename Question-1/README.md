@@ -19,9 +19,14 @@ AOV is used as a metric to determine how much that average customer is spending 
 Outliers in a dataset are any point or group of points that are significantly deviated from the rest of the dataset. Given our context of AOV, a data point may be any point where the orders result in an extremely large order amount (or extremely small). 
 For example, if there are 100 orders each with an amount of $15 we would have an AOV of $15. However, if we add in a single order of $4000, the AOV would be skewed upwards to $55 and thus portray an inaccurate representation of the AOV per customer. By analyzing the dataset, I have discovered a group of orders caused by a single customer that causes the AOV to be skewed towards a large value. 
 
-Secondly, the AOV in our calculation does not take into consideration of a possible price difference between stores. In the given dataset, we can observe from the image below that each store has a different unit price for its single shoe model. Since each store has a different unit price, the AOV from store to store may be different depending on price or traffic. As such it because hard to come to any meaningful conclusion using AOV alone.  
+Secondly, the AOV in our calculation does not take into consideration of a possible price difference between stores. In the dataset provided, we can observe from the Fig 1. below that each store has a different unit price for its single shoe model. Since each store has a different unit price, the AOV from store to store may be different depending on price or traffic. 
 
-In order to evaluate the dataset better, we can measure each store individually to determine if unit price has an effect on units purchased or by remeasuring the AOV with the outliers taken out. 
+<br><br>
+Fig 1. Unit price comparison
+![alt text](https://github.com/oFwano/Shopify-Technical-Challenge-Data-Science-Intern-Winter-2022/blob/master/Question-1/Images/unit-price.png "Unit price comparison")
+<br><br>
+
+With varying prices and varying traffic to each store, it become hard to make any meaningful conclusions using AOV alone. In order to evaluate the dataset better, we can measure each store individually to determine if a unit's price has an effect on units purchased or by remeasuring the AOV with the outliers taken out. 
 <br><br>
 
 ## **Question b) What metric would you report for this dataset?**
