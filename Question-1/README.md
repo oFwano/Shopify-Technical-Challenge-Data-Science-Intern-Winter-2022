@@ -18,14 +18,13 @@ For example, if there are 100 orders each with an amount of $15 we would have an
 Secondly, the AOV in our calculation does not take into consideration of a possible price difference between stores. In the given dataset, we can observe from the image below that each store has a different unit price for its single shoe model. Since each store has a different unit price, the AOV from store to store may be different depending on price or traffic. As such it because hard to come to any meaningful conclusion using AOV alone.  
 
 A better way to evaluate this dataset is to evaluate the unit price vs amount sold for each store. Assuming the traffic to each store is the same, we can determine if a certain price point is more or less effective by the number of units sold. This metric is also known as the mode.
-<br> 
 
 <br>
-## Question b) What metric would you report for this dataset?
+## **Question b) What metric would you report for this dataset?
 
 For this dataset, I would report the mode metric: the most frequently occuring unit price across all stores. By using this metric we can determine if a certain unit price is more of less effective by measuring the number of units sold.  
 
 <br>
-## Question c) What is its value?
+## **Question c) What is its value?
 
 
