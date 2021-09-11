@@ -28,4 +28,17 @@ Limit 1
 Answer: Peacock
 
 ## **Question C) What product was ordered the most by customers in Germany?**
-
+I interpreted this question as "What product was ordered the most by customers in Germany in terms of Quantity":
+```
+WITH CustomersGermany as (SELECT Orders.CustomerID, OrderDetails.ProductID, OrderDetails.Quantity
+FROM Orders, OrderDetails, Customers
+WHERE Orders.OrderId = OrderDetails.OrderID AND Orders.CustomerID = Customers.CustomerID AND Customers.Country = 'Germany')
+SELECT Products.ProductName
+FROM CustomersGermany, Products
+Where Products.ProductID = CustomersGermany.ProductID 
+GROUP BY CustomersGermany.productID
+ORDER BY Sum(CustomersGermany.Quantity) DESC
+LIMIT 1
+```
+Answer: 
+ Boston Crab Meat
