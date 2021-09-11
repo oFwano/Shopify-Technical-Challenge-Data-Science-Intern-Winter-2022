@@ -1,7 +1,6 @@
-# **Winter 2022 Data Science Intern Challenge**
+# **Winter 2022 Data Science Intern Challenge Question 1**
 To view my full thought process and my step-by-step approach to analyzing this dataset, please view the jupyter notebook attached to this repo and the comments associated with it. 
 
-## Question 1
 
 Link to dataset the provided and downloaded to be used as a csv file for my program: <br>
 https://docs.google.com/spreadsheets/d/16i38oonuX1y1g7C_UAmiK9GkY7cS-64DfiDMNiR41LM/edit#gid=0
